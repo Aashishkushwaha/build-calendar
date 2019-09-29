@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calendar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+</head>
+<body onload="displayDate(); displayTime(); generateDate();">
+    <div class="main-wrapper">
+        <div class="time-display">
+            <h4 id="time" class="date-time-heading"></h4>
+        </div>
+        <div class="date-display">
+        <p id="date" class="date-time-heading"></p>
+        </div>
+        <div class="month-year-wrapper">
+            <div class="month">
+                <button class="prev-button" onclick="prevMonth();">
+                  <i class="material-icons">play_arrow</i>
+                </button> 
+                <label id="month-label"></label>
+                <button class="next-button" onclick="nextMonth();">
+                  <i class="material-icons">play_arrow</i>
+                </button>
+            </div>
+            <div class="year">
+                <button class="prev-button" onclick="prevYear();">
+                  <i class="material-icons">play_arrow</i>
+                </button>
+                <label id="year-label"></label>
+                <button class="next-button" onclick="nextYear();">
+                  <i class="material-icons">play_arrow</i>
+                </button>
+            </div>
+        </div>
+        <div class="days-wrapper">
+            <div class="gap">
+                <div class="line"></div>
+                <div class="days-div">D &rarr;</div>
+                <div class="week-div">W &darr;</div>
+            </div>
+            <div class="days-display">
+                <b class="days-item" id="sunday">Sun</b>
+                <b class="days-item">Mon</b>
+                <b class="days-item">Tue</b>
+                <b class="days-item">Wed</b>
+                <b class="days-item">Thu</b>
+                <b class="days-item">Fri</b>
+                <b class="days-item">Sat</b>
+            </div>    
+        </div>
+        <div class="cal-wrapper">
+            <div class="weeks-display">
+                <b class="days-item" id="w1">1</b>
+                <b class="days-item" id="w2">2</b>
+                <b class="days-item" id="w3">3</b>
+                <b class="days-item" id="w4">4</b>
+                <b class="days-item" id="w5">5</b>
+                <b class="days-item" id="w6">6</b>
+            </div>
+            <div class="calender-grid">
+                <label id="d1"></label>
+                <label id="d2"></label>
+                <label id="d3"></label>
+                <label id="d4"></label>
+                <label id="d5"></label>
+                <label id="d6"></label>
+                <label id="d7"></label>
+                <label id="d8"></label>
+                <label id="d9"></label>
+                <label id="d10"></label>
+                <label id="d11"></label>
+                <label id="d12"></label>
+                <label id="d13"></label>
+                <label id="d14"></label>
+                <label id="d15"></label>
+                <label id="d16"></label>
+                <label id="d17"></label>
+                <label id="d18"></label>
+                <label id="d19"></label>
+                <label id="d20"></label>
+                <label id="d21"></label>
+                <label id="d22"></label>
+                <label id="d23"></label>
+                <label id="d24"></label>
+                <label id="d25"></label>
+                <label id="d26"></label>
+                <label id="d27"></label>
+                <label id="d28"></label>
+                <label id="d29"></label>
+                <label id="d30"></label>
+                <label id="d31"></label>
+                <label id="d32"></label>
+                <label id="d33"></label>
+                <label id="d34"></label>
+                <label id="d35"></label>
+                <label id="d36"></label>
+                <label id="d37"></label>
+                <label id="d38"></label>
+                <label id="d39"></label>
+                <label id="d40"></label>
+                <label id="d41"></label>
+                <label id="d42"></label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
