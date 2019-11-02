@@ -120,6 +120,7 @@ button{
 {
   font-size: 2rem;
   margin: .7rem 10px;
+  text-align: center;
 }
 
 .days-wrapper
@@ -262,6 +263,7 @@ button{
 
   #month-label, #year-label{
     font-size: 1.4rem;
+    text-align: center;
   }
 
   #month-label{
